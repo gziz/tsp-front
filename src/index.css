@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.nav-links {
+  padding: 12px 0px;
+  background-color: gray;
+  color: black;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  border-radius: 18px;
+  padding: 6px 24px;
+  font-size: 18px;
+}
+
+.home {
+  /* background-color: #c6c5d4; */
+  width: 95%;
+  height: 600px;
+  margin: 30px auto;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
+  border-style: groove;
+  background-color: #f2f2f2;
+  
+}
+
+.table-cont{
+  overflow-y: auto;
+  overflow-x: visible;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #ececec;
+  border-style: groove;
+  margin: 15px 15px;
+
+}
+
+.table{
+  margin: 20px 20px;
+}
+
+th, td {
+  padding:10px ;
+
+}
+
+.clickeado{
+  background-color: #acacac;
+  border:10px solid #acacac;
+}
+
+.container-right{
+  grid-row-start: 1;
+  grid-row-end: 6;
+  margin: 15px 15px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr;
+}
+
+.leafletContainer{
+  height: 100%;
+  width: 100%;
+  border-style: groove;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.container-right button{
+  height: 40px;
+  width: 100px;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+}
