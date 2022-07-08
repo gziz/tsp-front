@@ -9,7 +9,7 @@ function ShowRoute() {
 
   return (
     <div>
-      <h1>Hey</h1>
+      <h1>Ruta Establecida</h1>
       <table className='table-locations'>
             <thead>
                 <tr className='bg-primary'>

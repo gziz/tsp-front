@@ -12,7 +12,7 @@ export default function Navbar() {
             Home
           </Link>
 
-          <Link to="/locations/create_route" className='nav-link'>
+          <Link to="/create_route" className='nav-link'>
             Crear Ruta
           </Link>
 

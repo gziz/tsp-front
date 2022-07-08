@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
 import Navbar from "./components/Navbar";
-import GetAll from './routes/GetAll'
+import CreateRoute from './routes/CreateRoute'
 import ShowRoute from './routes/ShowRoute'
 import Home from "./routes/Home"
 
@@ -15,8 +15,8 @@ function App() {
 
         <Routes>
           <Route exact path="/" element = {<Home/>}/>
-          <Route exact path="/locations/create_route" element = {<GetAll/>}/>
-          <Route exact path="/locations/show_route" element = {<ShowRoute/>}/>
+          <Route exact path="/create_route" element = {<CreateRoute/>}/>
+          <Route exact path="/show_route" element = {<ShowRoute/>}/>
 
         </Routes>
       </Router>
