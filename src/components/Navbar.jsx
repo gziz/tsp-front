@@ -9,11 +9,11 @@ export default function Navbar() {
         <ul className='nav-links'>
 
           <Link to="/" className='nav-link'>
-            Home
+            <b>Home</b>
           </Link>
 
           <Link to="/create_route" className='nav-link'>
-            Crear Ruta
+            <b>Crear Ruta</b>
           </Link>
 
           </ul>

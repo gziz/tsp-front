@@ -2,19 +2,14 @@ import React from 'react'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 
-export default function Mapview(props) {
+function MapCreateRoute(props) {
     const {locationsList, locationsRuta} = props
-
-    locationsRuta && locationsRuta.map(elem => {
-        console.log(locationsList[elem]['lat'])
-        
-    })
 
     return(
 
         <div className='leafletContainer'>
-        <MapContainer style={{height: '100%', width:'100%'}}
-        center={[25.65, -100.29]} zoom={13}>
+        <MapContainer style={{height: '100%', width:'100%',borderRadius: "15px"}}
+        center={[25.7, -100.29]} zoom={10}>
             
             <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -25,7 +20,7 @@ export default function Mapview(props) {
                 return (    
                     <Marker position={position}>
                         <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                            {locationsList[elem]['university']}
                         </Popup>
                     </Marker>)
             })}
@@ -37,3 +32,37 @@ export default function Mapview(props) {
 
     )
 }
+
+
+function MapShowRoute(props) {
+    const {tour} = props
+
+    return(
+
+        <div className='leafletContainer'>
+        <MapContainer style={{height: '100%', width:'100%', borderRadius: "15px"}}
+        center={[25.7, -100.29]} zoom={11}>
+            
+            <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            {tour && tour.map(elem => {
+                const position = [elem[7], elem[8]];
+                return (    
+                    <Marker position={position}>
+                        <Popup>
+                            {elem[4]}
+                        </Popup>
+                    </Marker>)
+            })}
+        
+        </MapContainer>
+  
+      </div>
+
+
+    )
+}
+
+export {MapCreateRoute, MapShowRoute}

@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1{
+  margin-left: 20px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -33,14 +36,14 @@ code {
 }
 
 .home {
-  /* background-color: #c6c5d4; */
-  width: 95%;
-  height: 600px;
+  width: 90%;
+  height: 500px;
   margin: 30px auto;
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
   border-style: groove;
   background-color: #f2f2f2;
+  border-radius: 5px;
   
 }
 
@@ -54,7 +57,7 @@ code {
   background-color: #ececec;
   border-style: groove;
   margin: 15px 15px;
-
+  border-radius: 5px;
 }
 
 .table{
@@ -62,13 +65,11 @@ code {
 }
 
 th, td {
-  padding:10px ;
-
+  padding:8px ;
 }
 
 .clickeado{
   background-color: #acacac;
-  border:10px solid #acacac;
 }
 
 .container-right{
@@ -85,13 +86,69 @@ th, td {
   border-style: groove;
   grid-row-start: 1;
   grid-row-end: 5;
+  border-radius: 15px;
 }
 
 .container-right button{
-  height: 40px;
-  width: 100px;
+  height: 50px;
+  width: 120px;
   grid-row-start: 5;
   grid-row-end: 7;
   margin: auto;
   padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.expanded{
+  background-color:white;
+  border-style: groove;
+}
+
+.home-2 {
+  width: 90%;
+  height: 500px;
+  margin: 30px auto;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+  border-style: groove;
+  background-color: #f2f2f2; 
+  border-radius: 5px;
+}
+
+.cards{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 15px;
+  background-color: #ececec;
+  
+}
+.card{
+  border-style: groove;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+}
+.table-cont-2{
+  overflow-y: auto;
+  overflow-x: visible;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #ececec;
+  border-style: groove;
+  margin: 15px 15px;
+  border-radius: 5px;
+}
+.container-right-2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  margin: 15px 15px;
 }
