@@ -45,8 +45,8 @@ function ShowRoute() {
                     <thead>
                         <tr className='bg-primary'>
                             <th scope='col'>Orden de visita</th>
-                            <th scope='col'>City</th>
-                            <th scope='col'>University</th>
+                            <th scope='col'>Ciudad</th>
+                            <th scope='col'>Universidad</th>
                         </tr>
                     </thead>
 

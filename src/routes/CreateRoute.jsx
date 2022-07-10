@@ -75,9 +75,9 @@ function CreateRoute() {
               <thead>
                   <tr className='bg-primary'>
                       <th scope='col'>N</th>
-                      <th scope='col'>City</th>
-                      <th scope='col'>University</th>
-                      <th scope='col'>Enrollments</th>
+                      <th scope='col'>Ciudad</th>
+                      <th scope='col'>Universidad</th>
+                      <th scope='col'>Alumnos</th>
                   </tr>
               </thead>
 
