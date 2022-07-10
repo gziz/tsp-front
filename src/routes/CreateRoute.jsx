@@ -40,6 +40,7 @@ function CreateRoute() {
 
   const handleSubmit = async () => {
     try{
+      
       const computedRoute = await LocationManager.post("/locations/compute_route", {
         "locations_id": locationsRuta});
         navigate('/show_route', {state: {computedRoute: computedRoute.data}})
