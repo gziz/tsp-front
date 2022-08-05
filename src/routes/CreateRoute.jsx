@@ -55,7 +55,7 @@ function CreateRoute() {
       return (
         <tr onClick={() => handleRowClick(elem.id)} key={elem.id}
         className={locationsRuta.includes(elem.id)? 'clickeado': ''}>
-            <td>{elem.id+1}</td>
+            <td>{elem.id}</td>
             <td>{elem.city}</td>
             <td>{elem.university}</td>
             <td>{elem.enrollments}</td>
