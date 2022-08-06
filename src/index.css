@@ -10,6 +10,12 @@ body {
 h1{
   margin-left: 20px;
 }
+
+.home-info{
+  margin-left: 20px;
+  width: 40%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -66,6 +72,7 @@ code {
 
 th, td {
   padding:8px ;
+  cursor:pointer;
 }
 
 .clickeado{
@@ -98,6 +105,7 @@ th, td {
   padding: 10px 10px 10px 10px;
   border-radius: 5px;
   font-size: 1.2em;
+  cursor:pointer;
 }
 
 .expanded{
