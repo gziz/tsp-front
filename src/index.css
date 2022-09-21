@@ -98,7 +98,7 @@ th, td {
 
 .container-right button{
   height: 50px;
-  width: 120px;
+  width: 140px;
   grid-row-start: 5;
   grid-row-end: 7;
   margin: auto;

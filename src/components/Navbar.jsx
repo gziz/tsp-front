@@ -8,12 +8,12 @@ export default function Navbar() {
 
         <ul className='nav-links'>
 
-          {/* <Link to="/" className='nav-link'>
-            <b>Home</b>
-          </Link> */}
+          <Link to="/" className='nav-link'>
+            <b>TSP</b>
+          </Link>
 
           <Link to="/" className='nav-link'>
-            <b>Crear Ruta</b>
+            <b>Create Route</b>
           </Link>
 
           </ul>

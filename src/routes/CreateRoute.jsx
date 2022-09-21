@@ -65,7 +65,7 @@ function CreateRoute() {
 
   return (
     <>
-      <h1>Crear Ruta</h1>
+      <h1>Create Route</h1>
       <div className='home'>
         <div className='dashboard'>
         </div>
@@ -75,9 +75,9 @@ function CreateRoute() {
               <thead>
                   <tr className='bg-primary'>
                       <th scope='col'>N</th>
-                      <th scope='col'>Ciudad</th>
-                      <th scope='col'>Universidad</th>
-                      <th scope='col'>Alumnos</th>
+                      <th scope='col'>City</th>
+                      <th scope='col'>University</th>
+                      <th scope='col'>Students</th>
                   </tr>
               </thead>
 
@@ -108,7 +108,7 @@ function CreateRoute() {
         <div className='container-right'>
           <MapCreateRoute  locationsList={locationsList} locationsRuta={locationsRuta} ></MapCreateRoute>
           <button type="submit" onClick={handleSubmit}>
-            Crear Ruta
+            Create Route
           </button>
         </div>
 

@@ -22,21 +22,21 @@ function ShowRoute() {
 
   return (
     <div>
-      <h1>Ruta Establecida</h1>
+      <h1>Optimal Route</h1>
       <div className='dashboard'>
         </div>
         <div className='home-2'>
             <div className='cards'>
                 <div className='card'>
-                <p style={{fontSize: '1.4em'}}>Distancia (km)</p>
+                <p style={{fontSize: '1.4em'}}>Distance (km)</p>
                     <p style={{fontSize: '2em'}}>{tourInfo[0]}</p>
                 </div>
                 <div className='card'>
-                    <p style={{fontSize: '1.4em'}}>Tiempo</p>
+                    <p style={{fontSize: '1.4em'}}>Time</p>
                     <p style={{fontSize: '2em'}}>{tourInfo[1]}:{tourInfo[2]}</p>
                 </div>
                 <div className='card'>
-                    <p style={{fontSize: '1.4em'}}>Consumo</p>
+                    <p style={{fontSize: '1.4em'}}>Fuel</p>
                     <p style={{fontSize: '2em'}}>XXX</p>
                 </div>
             </div>
@@ -44,9 +44,9 @@ function ShowRoute() {
                 <table className='table-locations'>
                     <thead>
                         <tr className='bg-primary'>
-                            <th scope='col'>Orden de visita</th>
-                            <th scope='col'>Ciudad</th>
-                            <th scope='col'>Universidad</th>
+                            <th scope='col'>Visit Order</th>
+                            <th scope='col'>City</th>
+                            <th scope='col'>University</th>
                         </tr>
                     </thead>
 
@@ -58,7 +58,7 @@ function ShowRoute() {
                             {rowLocations(elem, index)}
                             <tr onClick={() => setExpandedRow(-1)} >
                                 <td className="expanded" colSpan={4}>
-                                Dirección: {elem[5]}
+                                Address: {elem[5]}
                                 </td>
                             </tr>
                             </>
